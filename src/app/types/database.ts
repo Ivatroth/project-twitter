@@ -9,7 +9,7 @@ export type Json =
 export interface Database {
   public: {
     Tables: {
-      post: {
+      posts: {
         Row: {
           content: string
           created_at: string
@@ -30,7 +30,7 @@ export interface Database {
         }
         Relationships: [
           {
-            foreignKeyName: "post_user_id_fkey"
+            foreignKeyName: "posts_user_id_fkey"
             columns: ["user_id"]
             referencedRelation: "users"
             referencedColumns: ["id"]

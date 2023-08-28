@@ -19,7 +19,7 @@ export default function PostCard ({
   return (
     <Card className="shadow-none bg-transparent hover:bg-slate-800 rounded-none cursor-pointer transition border-b border-while/20">
       <CardHeader className="justify-between">
-        <div className="flex gap-2">
+        <div className="flex gap-x-2">
         <Link href={`/${userName}`}>
           <Avatar radius="full" size="md" src={avatarUrl} />
         </Link>
